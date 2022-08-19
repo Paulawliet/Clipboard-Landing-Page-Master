@@ -1,0 +1,339 @@
+/* reset */
+body p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+li{
+    list-style-type: none;
+    
+}
+.btn{
+    border-style: none;
+    color: white;
+}
+
+/* base styles */
+body{
+    overflow-x: hidden;
+    padding:  120px 10px 50px 10px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1,h2,li,h3{
+    color: hsl(210, 10%, 33%);
+}
+.ios-btn{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac-btn{
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* mobile-first */
+.header img{
+    width: 10%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.btn{
+    cursor: pointer;
+}
+h2,h3,p{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+p{
+    font-size: 1.1em;
+    color: hsl(201, 11%, 66%);
+}
+h2{
+    font-size: 1.7em;
+}
+h3{
+    font-size: 1.4em;
+}
+.heading{
+    margin-bottom: 80px;
+
+}
+.header-img{
+    grid-column: 1/9;
+    margin: 0 auto;
+}
+.header-img img{
+    width: 100%;
+}
+.heading-text{
+    grid-column: 1/9;
+    text-align: center;
+}
+
+.heading-text p {
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 10px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.snippets div{
+    grid-column: span 9;
+}
+.snippets{
+    gap: 20px;
+    margin-bottom:100px;
+}
+.computer-img{
+
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.computer-img img{
+    width: 80%;
+    
+}
+
+.clipboard-text{
+    grid-column: 1/9;
+}
+.clipboard{
+    margin-bottom: 80px;
+}
+.devices-img{
+    width: 80%;
+}
+.devices-img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.workflow div{
+    grid-column: span 9;
+}
+.workflow-heading{
+    margin-bottom: 40px;
+}
+.workflow-img-container{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.download-info{
+    margin-top: 100px;
+}
+.brand-logos img{
+    grid-column: span 9;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.brand-logos{
+    margin-top: 50px;
+}
+.download-info div{
+    grid-column: span 9;
+    padding: 0 5px;
+}
+.btn{
+    text-align: center;
+    border-radius: 30px;
+}
+.download-info p{
+    margin-bottom: 40px;
+}
+.ios-btn{
+    margin-bottom: 25px;
+}
+.footer{
+    margin-top: 120px;
+}
+.footer-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.footer-img img{
+    width: 15%;
+}
+.footer li{
+    grid-column: span 9;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.footer li a{
+    color: hsl(210, 10%, 33%);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* for desktop */
+@media screen and (min-width:1440px){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    
+    }
+    p{
+        font-size: 22px;
+    }
+    .heading{
+        padding: 0 300px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .heading-text h1{
+        font-size: 55px;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .heading-text p{
+        font-size: 23px;
+    }
+    .btn{
+        display: inline-block;
+        padding: 10px 45px;
+        font-size: 25px;
+        margin-right: 20px;
+        
+    }
+    .heading-snippets p{
+        padding: 0 250px;
+    }
+    .heading-snippets h2{
+        font-size: 45px;
+    }
+    .heading-snippets p{
+        margin-bottom: 30px;
+    }
+    .snippets .computer-img{
+        grid-column: 1/5;
+        grid-row: 2/span 4;
+    }
+    .computer-img img{
+        width: 100%;
+    }
+    .quick-snippet h3 {
+        margin-bottom: 0;
+    }
+    .sync-snippet h3{
+        margin-bottom: 0;
+
+    }
+    .history-snippet h3{
+        margin-bottom: 0;
+    }
+    .snippets .quick-snippet{
+        margin-left: 100px;
+        grid-column: 5/9;
+        grid-row: 2;
+        padding-right: 200px;
+        line-height: 40px;
+    }
+    .snippets .sync-snippet{
+        margin-left: 100px;
+        grid-column: 5/9;
+        grid-row: 3;
+        padding-right: 200px;
+        line-height: 40px;
+    }
+    .snippets .history-snippet{
+        margin-left: 100px;
+        grid-column: 5/9;
+        grid-row: 4;
+        padding-right: 220px;
+        line-height: 40px;
+    }
+
+
+    .quick-snippet h3, .quick-snippet p{
+        text-align: left;
+    }
+    .sync-snippet h3, .sync-snippet p{
+        text-align: left;
+    }
+    .history-snippet h3, .history-snippet p{
+        text-align: left;
+    }
+    .clipboard-text p{
+        padding: 0 350px;
+    }
+    .devices-img-container img{
+        width: 70%;
+    }
+    .workflow .workflow-blacklist{
+        grid-column: 1/4;
+        
+    }
+    .workflow .workflow-plaintext{
+        grid-column: 4/6;
+    }
+    .workflow .workflow-preview{
+        grid-column: 6/9;
+        
+    }
+    .workflow{
+        padding: 0 60px;
+    }
+    .brand-logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .download-info p{
+        padding: 0 350px;
+        margin-bottom: 50px;
+    }
+    .download-info{
+        text-align: center;
+    }
+    .footer{
+        padding: 20px 0px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .footer-img img{
+        width: 40%;
+    }
+    .footer ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media{
+        display: flex;
+        gap: 40px;
+        margin:0;
+    }
+}
